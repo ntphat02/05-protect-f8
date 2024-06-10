@@ -29,3 +29,103 @@ button {
 a {
   text-decoration: none;
 }
+
+.btn {
+  --height: 149px;
+  min-width: 58px;
+  background: #212832;
+  color: #fff;
+  padding: 15px 30px;
+  line-height: 58px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* heading */
+.heading {
+  padding: 8px;
+}
+
+.fixed {
+  position: sticky;
+  z-index: 1;
+  top: -6px;
+}
+.heading__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading-logo {
+  display: flex;
+  align-self: center;
+  position: relative;
+}
+
+.heading-logo::after {
+  content: "CeloBank";
+  top: 2px;
+  left: 28px;
+  position: absolute;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.heading-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.heading-nav__link {
+  color: #696d76;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.heading-nav__link:hover {
+  color: #212832;
+  cursor: pointer;
+}
+
+.active {
+  color: #212832;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  color: #212832;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  background: #7264d6;
+  width: 47px;
+  height: 1px;
+}
+
+.heading-nav__item + .heading-nav__item {
+  margin-left: 48px;
+}
+
+.heading-cta__login {
+  margin-right: 28px;
+  color: #212832;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.heading-cta__singup {
+  --height: 113px;
+  min-width: 52px;
+  line-height: 113px;
+}
